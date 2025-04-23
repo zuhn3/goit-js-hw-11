@@ -10,7 +10,6 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
     build: {
       sourcemap: true,
       outDir: 'dist', 
