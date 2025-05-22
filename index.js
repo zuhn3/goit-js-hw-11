@@ -11,4 +11,3 @@ import{a as u,S as f,i as a}from"./assets/vendor-Db2TdIkw.js";(function(){const 
       </div>
     </li>
   `).join("");c.innerHTML=t,y.refresh()}function g(){c.innerHTML=""}function L(){document.querySelector(".loader").classList.add("is-visible")}function b(){document.querySelector(".loader").classList.remove("is-visible")}const l=document.querySelector(".form"),w=l.querySelector('input[name="search-text"]');l.addEventListener("submit",async s=>{s.preventDefault();const t=w.value.trim();if(!t){a.error({title:"Error",message:"Please enter a search term."});return}g(),L();try{const r=await p(t);r.length===0?a.info({title:"No Results",message:"Sorry, there are no images matching your search query. Please try again!"}):h(r)}catch{a.error({title:"Error",message:"Something went wrong. Please try again later."})}finally{b()}});
-//# sourceMappingURL=index.js.map
