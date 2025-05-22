@@ -6,13 +6,13 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: "vite build --base=/goit-js-hw-11/",
+    base: "/goit-js-hw-11/", 
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     build: {
       sourcemap: true,
-      outDir: 'dist', 
+      outDir: 'dist',
       emptyOutDir: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),

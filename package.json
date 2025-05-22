@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://zuhn3.github.io/goit-js-hw-11/",
+  "homepage": "https://zuhn3.github.io/goit-js-hw-11",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build --base=/goit-js-hw-11/",
